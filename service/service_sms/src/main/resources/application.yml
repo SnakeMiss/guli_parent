@@ -1,0 +1,29 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: service-msm
+  profiles:
+    active: dev
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    timeout: 180000
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+aliyun:
+  sms:
+    keyid: LTAI5tDbHm77rKwPvvFaYv52
+    keysecret:  6I9GxEa8q7DwYxOFkWDQ1A8lfFw713

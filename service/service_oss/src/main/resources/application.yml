@@ -1,0 +1,18 @@
+aliyun:
+  oss:
+    file:
+      bucketname: edu-621322
+      endpoint: oss-cn-shanghai.aliyuncs.com
+      keyid: LTAI5tShLXj3BTjjX2dKSWxA
+      keysecret: rVpfLebEgZcjjemZ1Sg1PJqAT85tme
+server:
+  port: 8002
+spring:
+  application:
+    name: service-oss
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  profiles:
+    active: dev
