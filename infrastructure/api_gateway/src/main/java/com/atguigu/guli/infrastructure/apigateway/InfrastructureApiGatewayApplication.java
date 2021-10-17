@@ -11,7 +11,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author lj on 2021/2/17.
  * @version 1.0
  */
-
+//测试github
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, RedisAutoConfiguration.class,
         RedisRepositoriesAutoConfiguration.class})
 @EnableDiscoveryClient
